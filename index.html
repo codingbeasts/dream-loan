@@ -29,7 +29,7 @@
                             <li><a href="./src/pages/business-loan.html">business loan</a></li>
                         </ul>
                     </li>
-                    <li><a href="">emi calculator</a></li>
+                    <li><a href="./src/pages/emi-cal.html">emi calculator</a></li>
                     <li><a href="">contact us</a></li>
                     <li><a href="">about us</a></li>
                 </ul>
@@ -43,27 +43,27 @@
         <div class="carousel">
             <div class="item-1">
                 <div class="part-1">
-                    <span>home loan</span>
+                    <span>Home loan</span>
                     <p>fullfill all your multiple need with choice</p>
-                    <button class="btn">apply now</button>
+                    <a href="./src/pages/home-loan.html"><button class="btn">apply now</button></a>
                 </div>
-                <div class="part-2"><img src="./src/images/carousel-part-2.jpg" alt=""></div>
+                <div class="part-2"><img src="./src/images/carousel-home.jpg" alt=""></div>
             </div>
             <div class="item-2">
                 <div class="part-1">
-                    <span>peronsal loan</span>
+                    <span>Peronsal loan</span>
                     <p>fullfill all your multiple need with choice</p>
-                    <button class="btn">apply now</button>
+                    <a href="./src/pages/personal-loan.html"><button class="btn">apply now</button></a>
                 </div>
-                <div class="part-2"><img src="./src/images/carousel-part-2.jpg" alt=""></div>
+                <div class="part-2"><img src="./src/images/carousel-personal.jpg" alt=""></div>
             </div>
             <div class="item-3">
                 <div class="part-1">
-                    <span>home loan</span>
+                    <span>BUsiness loan</span>
                     <p>fullfill all your multiple need with choice</p>
-                    <button class="btn">apply now</button>
+                    <a href="./src/pages/business-loan.html"><button class="btn">apply now</button></a>
                 </div>
-                <div class="part-2"><img src="./src/images/carousel-part-2.jpg" alt=""></div>
+                <div class="part-2"><img src="./src/images/carousel-business.jpg" alt=""></div>
             </div>
         </div>
         <!-- section 2 -->
@@ -152,11 +152,11 @@
         <!-- section 5 -->
         <div class="apply-form">
             <div class="part-1">
-                <h3><a href="">quick register</a></h3>
+                <h3>quick register</h3>
                 <p>fill the simple form</p>
             </div>
             <div class="part-2">
-                <h3><a href="./src/pages/customer.html">apply</a></h3>
+                <h3>apply</h3>
                 <p>quick apply less than 2 minutes</p>
             </div>
         </div>
@@ -216,22 +216,28 @@
     <div class="modal-bg signin">
         <div class="modal">
             <i class="material-icons closeLogin">close</i>
-            <span>register</span>
-            <label for="name">full name : </label>
-            <input type="text" name="fullname">
-            <label for="name">user name : </label>
-            <input type="text" name="username">
+            <span>Register</span></br>
+            <form action="connect.php" method="POST">
+            <label for="name">FirstName : </label>
+            <input type="text" name="firstName">
+            <label for="name">LastName : </label>
+            <input type="text" name="lastName">
+            <label for="name">User Name : </label>
+            <input type="text" name="userName">
             <label for="password">password : </label>
             <input type="password" name="password">
-            <label for="number">phone no : </label>
-            <input type="number" name="number">
+            <label for="number">Mobile no : </label>
+            <input type="number" name="mobilenumber">
             <label for="email">email : </label>
-            <input type="email" name="email">
-            <button class="btn">register</button>
+            <input type="email" name="emailid">
+            <input type="submit">register
+            </form>
         </div>
     </div>
     <script src="./src/js/glider.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="./src/js/app.js"></script>
+    <script type="text/javascript" src="./src/js/emi.app.js"></script>
+    <script type="text/javascript" src="./src/js/angular.min.js"></script>
     
 </body>
 </html>
